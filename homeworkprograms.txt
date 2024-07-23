@@ -1,0 +1,131 @@
+*** EVEN NUMBER
+a=int(input())
+if(a%2==0):
+  print("even number")
+else:
+  print("not even")
+
+a=list(map(int,input().split()))
+l=len(a)
+for i in range(l):
+    if(a[i]%2==0):
+        print("even number")
+    else:
+        print("not even number")
+
+*** ODD NUMBER
+
+a=int(input())
+if(a%2!=0):
+  print("odd number")
+else:
+  print("not odd")
+
+a=list(map(int,input().split()))
+l=len(a)
+for i in range(l):
+    if(a[i]%2!=0):
+        print("odd number")
+    else:
+        print("not odd number")
+
+*** FIND THE GREATEST OF THREE NUMBER
+a , b , c = map(int,input().split())
+if(a>b and a>c):
+   print("a is the greatest number", +a)
+elif(b>a and b>c):
+   print("b is the greatest number" , +b)
+else:
+   print("c is the greatest number" , +c)
+
+*** SUM OF ALL ELEMENTS IN AN ARRAY
+
+l1=list(map(int,input().split()))
+l=len(l1)
+sum=0
+for i in range(l):
+    sum +=l1[i]
+print(sum)
+
+*** FIND THE PEAK ELEMENT
+a=list(map(int,input().split()))
+l=len(a)
+for i in range(1,l):
+   if(a[i]>a[i-1] and a[i]>a[i+1]):
+       count=i
+if(a[-1]>a[-2] and a[-1]>count:
+       count=l-1
+print(a[count])
+
+
+*** FIND THE MAXIMUM ELEMENT IN AN ARRY
+a=list(map(int,input().split()))
+max=a[0]
+for i in range(0,len(a)):
+    if(a[i]>max):
+       max=a[i]
+print(max)
+
+*** reverse an array without using buildin functions
+a=int(input())
+rev=""
+while n>0:
+   rem=a%10
+   rev=rev*str(rem)
+   a=a//10
+print(int(rev))
+
+
+*** SECOND LARGEST NUMBER IN AN ARRAY
+
+l1=list(map(int,input().split()))
+l=len(l1)
+l1.sort(reverse=True)
+for i in range(1,l):
+   if(l1[i] != l1[0]):
+      print(l1[i])
+      break
+   else:
+      print("no second largest")
+
+
+*** FIND SQUARES OF ELEMENTS IN ARRAY
+l1=list(map(int,input().split()))
+l=len(l1)
+for i in range(l):
+    a[i]=a[i]*a[i]
+    print(a[i])
+
+
+***find sum of squares of even and odd digits
+
+a=list(map(int,input().split()))
+l=len(a)
+for i in range(l):
+    if(a[i]%2==0):
+        a[i]=a[i]*a[i]
+        print(a[i])
+
+a=list(map(int,input().split()))
+l=len(a)
+for i in range(l):
+    if(a[i]%2!=0):
+        a[i]=a[i]*a[i]
+        print(a[i])23
+
+
+*** check number is palindrome with while loop
+a=int(input())
+rev=""
+while n>0:
+   rem=a%10
+   rev=rev*str(rem)
+   a=a//10
+print(int(rev))
+if(a==rev):
+   print("palindrome")
+else:
+   print("not a palindrome")
+
+*** for i in range(32,128):
+        print(chr(i),end=" ")#ascii values in the range vl be printed
