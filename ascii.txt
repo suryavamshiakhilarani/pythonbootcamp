@@ -1,0 +1,144 @@
+*** ASCII VALUES
+0-9---->48 TO 57
+A-Z---->65 TO 90
+a-z---->97 TO 122
+
+***STRING
+strings are immutable
+methods in strings:
+length--->len()
+1.lower
+2.upper
+3.isdigit
+4.isalnum
+5.isalpha
+6.isnumeric
+7.swapcase
+8.split
+9.capitalize
+10.strip
+11.replace
+
+*** program to implement string methods
+
+a=str(input()) #hello woRld
+print(a.lower()) #hello world
+print(a.upper()) #HELLO WORLD
+l=len(a)
+print(l) #11
+print(a.capitalize())#Hello world
+print(a.title())#Hello World
+print(a.swapcase())#HELLO WOrLD
+print(a.strip())#hello woRld
+print(a.replace('l','z'))#hezzo woRzd
+print(a.split())#['hello', 'woRld']
+print(a.split('l'))#['he','','o woR,'d']
+
+*** RETURNS BOOLEAN VALUES
+
+print(a.isalnum)
+print(a.isdigit) # CONSIDER ONLY FROM0 TO 9
+print(a.isnumeric()) # CONSIDER ALL THE NUMBER
+print(a.islower())
+print(a.isupper())
+print(a.islower())
+print(a.istitle())
+print(a.isalpha())s
+print(a.isascii())
+
+***WRITE A PROGRAM TO CHECK THE COUNT OF VOWELS
+
+x=str(input())
+y='aeiou'
+inp=x.lower()
+count=0
+for i in inp:
+    if(i in y):
+        count +=1
+print(count)
+
+*** WRITE A PROGRAM TO COUNT THE NUMBER OF CONSTANTS
+
+x=str(input())
+abc = 'bcdfghjlmnpqrstvwxyz'
+inp=x.lower()
+count=0
+for i in inp:
+    if(i in abc):
+        count +=1
+print(count)
+
+*** PRINT ALL THE VOWELS FOLLOWED BY CONSTANTS
+
+x=str(input())
+y='aeiou'
+abc='bcdfghjklmnpqrstvwxyz'
+ans=''
+inp=x.lower()
+for i in inp:
+    if(i in y):
+        ans += i
+for i in inp:
+    if(i in abc):
+        ans +=i
+print(ans)
+
+***PRINT THE UNIQUE OR NON REPEATING CHARACTERS IN STRING
+
+x=str(input())
+z='aeiou'
+y='bcdfghjklmnpqrstvwxyz'
+ans=""
+inp=x.lower()
+for i in inp:
+    if i not in ans:
+        ans +=i
+print(ans)       
+
+***  output is 6
+1. x='hello123'
+inp='0123456789'
+s=0
+for i in x:
+    if i in  inp :
+        s += int(i)
+print(s)
+
+2. inp=str(input())
+sum=0
+for i in inp:
+    if(ord(i)>=48 and ord(i)<=57):
+        sum+=int(i)
+print(sum)
+
+3. inp=str(input())
+sum=0
+for i in inp:
+   if(i.isnumeric()):
+       sum+=int(i)
+print(sum)
+
+*** write a program to remove all brackets
+
+inp=str(input())
+for i in inp:
+    if(ord(i)==123 or ord(i)==125 or ord(i)==40 or ord(i)==41 or ord(i)==91 or ord(i)==93):
+        pass
+    else:
+        print(i,end=" ")
+
+*** INPUT hello-----world
+    OUTPUT -----hello world
+
+inp=str(input())
+count=0
+final=""
+for i in inp:
+    if i in '-':
+        count +=1
+    else:
+        final+=i
+# print(count)
+# x=inp.replace('-','')
+# print('-'*count+x)
+print("-"*count+" "+ final)

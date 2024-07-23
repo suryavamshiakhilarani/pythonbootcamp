@@ -1,0 +1,27 @@
+*****
+*****
+*****
+for i in range(3):
+   for j in range(3):
+      print('*',end=" ")
+   print()
+
+   *  *
+*     *
+*  * 
+for i in range(3):
+    for j in range(3):
+        if i==j:
+            print(" ",end=" ")
+        else:
+            print('*',end=" ")
+    print()
+
+HOMEWORK
+
+1.PRINT LOWER TRIANGLE
+2.PRINT UPPER TRIANGLE
+3.PRINT RHOMBUS
+4.PRINT PARALLELOGRAM
+5.PRINT NUMUMBER PYIRAMID
+    
